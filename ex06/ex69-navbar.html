@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.69 NavBar</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" style="padding-bottom:200px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="h4 mb-4">navigation</h1>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+        <h2 class="h3">ulタグでの実装例（折りたたみ）</h2>
+        <nav class="navbar navbar-expand-sm bg-light">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-items">
+            ボタン
+          </button>
+          <div class="collapse navbar-collapse" id="collapse-items">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" data-toggle="pill" href="#home">Page A</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu1">Page B</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu2">Page C</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" data-toggle="pill" href="#menu3">Page D</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-12">
+        <h2 class="h3">divタグでの実装例（折りたたみ）</h2>
+        <nav class="navbar navbar-expand-sm bg-light">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-items2">
+            ボタン
+          </button>
+          <div class="collapse navbar-collapse" id="collapse-items2">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" data-toggle="pill" href="#home">Page A</a>
+              <a class="nav-item nav-link" data-toggle="pill" href="#menu1">Page B</a>
+              <a class="nav-item nav-link" data-toggle="pill" href="#menu2">Page C</a>
+              <a class="nav-item nav-link disabled" data-toggle="pill" href="#menu3">Page D</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-12">
+        <h2 class="h3">インラインフォーム</h2>
+        <nav class="navbar navbar-expand-sm bg-light">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-items3">
+            ボタン
+          </button>
+          <div class="collapse navbar-collapse" id="collapse-items3">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" data-toggle="pill" href="#home">Page A</a>
+              <a class="nav-item nav-link" data-toggle="pill" href="#menu1">Page B</a>
+              <a class="nav-item nav-link" data-toggle="pill" href="#menu2">Page C</a>
+              <a class="nav-item nav-link disabled" data-toggle="pill" href="#menu3">Page D</a>
+            </div>
+          </div>
+          <form class="form-inline">
+            <input type="text" class="form-control mr-2" value="" placeholder="キーワード">
+            <button class="btn btn-outline-primary">検索</button>
+          </form>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

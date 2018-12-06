@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.81 プッシュボタン</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="mt-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 mb-5">
+        <h5 id="msg" class="mb-4">type an text...</h5>
+        <button type="button" id="btn1" class="btn btn-primary" onClick="doAction();">
+          button
+        </button>
+      </div>
+
+      <div class="col-12 mb-5">
+        <h3>default</h3>
+        <div id="btn-container-1"></div>
+
+        <h3>active</h3>
+        <div id="btn-container-2"></div>
+
+        <h3>disabled</h3>
+        <div id="btn-container-3"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    let counter = 0;
+    function doAction() {
+      if (counter % 2 === 0) {
+        $('#btn1')
+          .addClass('btn-warning')
+          .removeClass('btn-primary');
+      } else {
+        $('#btn1')
+          .addClass('btn-primary')
+          .removeClass('btn-warning');
+      }
+      $('#msg').text('clicked: ' + ++counter);
+    }
+  </script>
+  <script>
+    const arr = ['primary', 'secondary', 'info', 'warning', 'danger'];
+    const cnt = arr.length;
+    let div;
+
+    div = $('#btn-container-1');
+    for (let i=0; i < 10; ++i) {
+      div.append(
+        $('<button>')
+          .attr('class', 'btn m-1 btn-' + arr[i % cnt])
+          .text('Button No.' + (i + 1))
+      );
+    }
+    div = $('#btn-container-2');
+    for (let i=0; i < 10; ++i) {
+      div.append(
+        $('<button>')
+          .attr('class', 'btn m-1 btn-' + arr[i % cnt])
+          .text('Button No.' + (i + 1))
+          .addClass('active')
+      );
+    }
+    div = $('#btn-container-3');
+    for (let i=0; i < 10; ++i) {
+      div.append(
+        $('<button>')
+          .attr('class', 'btn m-1 btn-' + arr[i % cnt])
+          .text('Button No.' + (i + 1))
+          .addClass('disabled')
+      );
+    }
+  </script>
+</body>
+</html>

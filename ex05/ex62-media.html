@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.62 メディアオブジェクト(media)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" style="padding-bottom:200px;">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>panel sample</h1>
+      </div>
+    </div>
+
+    <div class="row m-3">
+      <div class="col-sm-12">
+
+        <h2>イメージ(左)</h2>
+        <div class="media bg-info p-3">
+          <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+          <div class="media-body">
+            <h5 class="text-capitalize">Media Heading</h5>
+            <p>
+              this is media object content.
+              this is media object content.
+            </p>
+          </div>
+        </div>
+
+        <hr class="m-3">
+
+        <h2>イメージ(右)</h2>
+        <div class="media bg-warning p-3">
+          <div class="media-body">
+            <h5 class="text-capitalize">Media Heading</h5>
+            <p>
+              this is media object content.
+              this is media object content.
+            </p>
+          </div>
+          <img src="../img/sample1.png" class="ml-3" alt="" style="width:100px;">
+        </div>
+
+        <hr class="m-3">
+
+        <h2>楕円形(rounded-circle)</h2>
+        <div class="media bg-danger p-3 rounded-circle">
+          <div class="media-body text-center">
+            <h5 class="text-uppercase">caution!!</h5>
+            <p>this is media object content.</p>
+          </div>
+        </div>
+
+        <hr class="m-3">
+
+        <h2>ulやolタグによるリスト化</h2>
+        <ul class="list-unstyled">
+          <li class="media m-2">
+            <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+            <div class="media-body">
+              <h5 class="text-uppercase">Content No.01</h5>
+              <p>
+                this is media object content.
+                this is media object content.
+              </p>
+            </div>
+          </li>
+          <li class="media m-2">
+            <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+            <div class="media-body">
+              <h5 class="text-uppercase">Content No.02</h5>
+              <p>
+                this is media object content.
+                this is media object content.
+              </p>
+            </div>
+          </li>
+          <li class="media m-2">
+            <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+            <div class="media-body">
+              <h5 class="text-uppercase">Content No.03</h5>
+              <p>
+                this is media object content.
+                this is media object content.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <hr class="m-3">
+
+        <h2>メディアの階層化</h2>
+        <!-- 外側のメディアオブジェクト -->
+        <div class="media p-3">
+          <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+          <div class="media-body">
+            <h5 class="text-capitalize">Media Heading</h5>
+            <p>
+              this is media object content.
+              this is media object content.
+            </p>
+
+            <!-- 内側のメディアオブジェクト -->
+            <div class="media p-3">
+              <img src="../img/sample1.png" class="mr-3" alt="" style="width:100px;">
+              <div class="media-body">
+                <h5 class="text-capitalize">Media Heading</h5>
+                <p>
+                  this is media object content.
+                  this is media object content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="m-3">
+
+        <h2>メディアの整列</h2>
+        <div class="media p-3">
+          <img src="../img/sample1.png" class="mr-3 align-self-start" alt="" style="width:100px;">
+          <div class="media-body">
+            <h5 class="text-capitalize">画像(上)</h5>
+            <p>
+              this is media object content.<br>
+              this is media object content.<br>
+              this is media object content.
+            </p>
+          </div>
+        </div>
+        <div class="media p-3">
+          <img src="../img/sample1.png" class="mr-3 align-self-center" alt="" style="width:100px;">
+          <div class="media-body">
+            <h5 class="text-capitalize">画像(中)</h5>
+            <p>
+              this is media object content.<br>
+              this is media object content.<br>
+              this is media object content.
+            </p>
+          </div>
+        </div>
+        <div class="media p-3">
+          <img src="../img/sample1.png" class="mr-3 mb-3 align-self-end" alt="" style="width:100px;">
+          <div class="media-body">
+            <h5 class="text-capitalize">画像(下)</h5>
+            <p>
+              this is media object content.<br>
+              this is media object content.<br>
+              this is media object content.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

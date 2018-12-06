@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.86 アラート</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="mt-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- 2秒間だけアラートを表示する -->
+      <div class="col-12">
+        <div id="alert-1" class="lead"></div>
+      </div>
+
+      <!-- 表示中のアラートをボタンクリックで消す -->
+      <div class="col-12">
+        <div id="alert-2" class="alert alert-danger lead">this is alert message</div>
+        <button class="btn btn-primary" id="btn-2">Close</button>
+      </div>
+
+      <!-- Closeボタン付きアラートを表示する -->
+      <div class="col-12">
+        <div id="alert-3" class="lead">this is alert message</div>
+        <button class="btn btn-secondary" id="btn-3">Add</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    /**
+     * アラート要素を生成する
+     */
+    function alert(msg) {
+      return $('<div class="alert" role="alert"></div>')
+        .text(msg);
+    }
+
+    /**
+     * アラート要素(Closeボタン付き)を生成する
+     */
+    function alertWithCloseBtn(msg) {
+      return alert(msg)
+        .addClass('alert-success alert-dismissable')
+        .append(
+          $('<button class="close" data-dismiss="alert"></button>')
+            .append(
+              $('<span aria-hidden="true">☓</span>')
+            )
+        );
+    }
+
+    (function($){
+      const e = alert('this is alert.').addClass('alert-warning');
+
+      // アラートを表示する
+      $('#alert-1').append(e);
+
+      // 2秒後にアラートを消す
+      setTimeout(() => {
+        e.alert('close');
+      }, 2000);
+
+      // ボタンクリックでアラートを消す
+      $('#btn-2').on('click', function(){
+        $('#alert-2').alert('close');
+      });
+
+      // Closeボタン付きアラートを表示する
+      $('#btn-3').on('click', function(){
+        $('#alert-3').append(
+          alertWithCloseBtn('this is alert.')
+        );
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

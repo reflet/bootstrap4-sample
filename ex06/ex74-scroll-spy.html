@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.74 スクロールスパイ(scroll-spy)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="padding-bottom:80px;">
+  <div class="container" style="padding-bottom:800px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="h4 mb-4">navigation</h1>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>ナビゲーション（横）</h2>
+        <div class="border border-info p-1">
+          <nav id="navbar-1" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="#start" class="nav-link">Start</a></li>
+              <li class="nav-item"><a href="#middle" class="nav-link">Middle</a></li>
+              <li class="nav-item"><a href="#end" class="nav-link">End</a></li>
+            </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-1" data-offset="0" class="scrollspy-frame">
+            <h4 id="start">Start Title</h4>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+            <h4 id="middle">Middle Title</h4>
+            <p>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+            </p>
+            <h4 id="end">End Title</h4>
+            <p>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-info p-1 mb-5">
+      <h2>ナビゲーション（縦）</h2>
+      <div class="row">
+        <div class="col-4">
+          <div id="list-1" class="list-group d-flex flex-column">
+            <a href="#start-row" class="list-group-item list-group-item-action">start</a>
+            <a href="#middle-row" class="list-group-item list-group-item-action">middle</a>
+            <a href="#end-row" class="list-group-item list-group-item-action">end</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="scrollspy-frame" data-spy="scroll" data-target="#list-1" data-offset="0">
+            <h4 id="start-row">Start Title</h4>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+            <h4 id="middle-row">Middle Title</h4>
+            <p>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+            </p>
+            <h4 id="end-row">End Title</h4>
+            <p>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-info p-1 mb-5">
+      <h2>階層ナビゲーション</h2>
+      <div class="row">
+        <div class="col-4">
+          <nav id="nav-1" class="nav nav-pills flex-column navbar-light bg-light">
+            <a href="#start-str" class="nav-link">Start</a>
+            <nav class="nav nav-pills flex-column bg-light ml-3">
+              <a href="#start-str-a" class="nav-link">Start-A</a>
+              <a href="#start-str-b" class="nav-link">Start-B</a>
+            </nav>
+
+            <a href="#middle-str" class="nav-link">Middle</a>
+            <nav class="nav nav-pills flex-column bg-light ml-3">
+              <a href="#middle-str-a" class="nav-link">Middle-A</a>
+              <a href="#middle-str-b" class="nav-link">Middle-B</a>
+            </nav>
+
+            <a href="#end-str" class="nav-link">End</a>
+          </nav>
+        </div>
+        <div class="col-8">
+          <div class="scrollspy-frame" data-spy="scroll" data-target="#nav-1" data-offset="0">
+            <h4 id="start-str">Start Title</h4>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+            <h5 id="start-str-a">Start-A Title</h5>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+            <h5 id="start-str-b">Start-B Title</h5>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+
+            <h4 id="middle-str">Middle Title</h4>
+            <p>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br><br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+              this is middle sample page. this is middle sample page. this is middle sample page.<br>
+            </p>
+            <h5 id="middle-str-a">Middle-A Title</h5>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+            <h5 id="middle-str-b">Middle-B Title</h5>
+            <p>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br><br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+              this is start sample page. this is start sample page. this is start sample page.<br>
+            </p>
+
+            <h4 id="end-str">End Title</h4>
+            <p>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br><br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+              this is end sample page. this is end sample page. this is end sample page.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .scrollspy-frame {
+      position: relative;
+      height: 200px;
+      margin-top: 10px;
+      overflow: auto;
+    }
+
+  </style>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.85 ポップオーバー</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="mt-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 mb-5" id="btn">
+        <h3>テキストメッセージを表示する</h3>
+        <button type="button" class="btn m-1 btn-primary">Popover Btn</button>
+        <button type="button" class="btn m-1 btn-secondary">Popover Btn</button>
+        <button type="button" class="btn m-1 btn-info">Popover Btn</button>
+        <button type="button" class="btn m-1 btn-success">Popover Btn</button>
+        <button type="button" class="btn m-1 btn-warning">Popover Btn</button>
+        <button type="button" class="btn m-1 btn-danger">Popover Btn</button>
+      </div>
+
+      <div class="col-12 mb-5" id="popover">
+        <h3>htmlコンテンツを表示する</h3>
+        <button class="btn btn-primary">Html Popover</button>
+        <span class="invisible">
+          <figure class="figure">
+            <img src="../img/sample1.png" class="figure-img img-fluid" alt="figure sample">
+            <figcaption class="figure-caption">
+              this is sample image.
+            </figcaption>
+          </figure>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $('#btn button')
+      .popover({
+        placement: 'bottom',
+        trigger  : 'focus',
+        title    : 'popover title!',
+        content  : 'this is popover message.'
+      });
+
+    (function($){
+      const e = $('#popover');
+      $('button', e).popover({
+        placement: 'bottom',
+        trigger  : 'focus',
+        title    : 'html popover!',
+        content  : $('span', e).html(),
+        html     : true
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

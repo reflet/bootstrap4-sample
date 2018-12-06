@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.48 ボタングループ(btn-group)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="padding-bottom:200px;">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>GUI sample</h1>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12 m-3">
+      <p>横並びのボタン</p>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-info">Left</button>
+        <button type="button" class="btn btn-info">Middle</button>
+        <button type="button" class="btn btn-info">Right</button>
+      </div>
+    </div>
+    <div class="col-12 m-3">
+      <div class="btn-group" role="group">
+        <button class="btn btn-primary">Left</button>
+        <button class="btn btn-primary">Middle</button>
+        <button class="btn btn-primary">Right</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <p>横並びのチェックボックス</p>
+      <div class="btn-group" data-toggle="buttons">
+
+        <div class="btn btn-info active">
+          <input type="checkbox" name="check[]" value="1" id="ck1" class="form-input" checked autocomplete="off">
+          <label for="ck1" class="active mt-1">Checkbox 1</label>
+        </div>
+
+        <div class="btn btn-info">
+          <input type="checkbox" name="check[]" value="2" id="ck2" class="form-input" autocomplete="off">
+          <label for="ck2" class="mt-1">Checkbox 2</label>
+        </div>
+
+        <div class="btn btn-info">
+          <input type="checkbox" name="check[]" value="3" id="ck3" class="form-input" autocomplete="off">
+          <label for="ck3" class="mt-1">Checkbox 3</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <p>縦並びのラジオボタン</p>
+      <div class="btn-group-vertical" data-toggle="buttons">
+
+        <div class="btn btn-info active">
+          <input type="radio" name="radio" value="1" id="rd1" class="form-input" checked autocomplete="off">
+          <label for="rd1" class="active mt-1">Radio 1</label>
+        </div>
+
+        <div class="btn btn-info">
+          <input type="radio" name="radio" value="2" id="rd2" class="form-input" autocomplete="off">
+          <label for="rd2" class="mt-1">Radio 2</label>
+        </div>
+
+        <div class="btn btn-info">
+          <input type="radio" name="radio" value="3" id="rd3" class="form-input" autocomplete="off">
+          <label for="rd3" class="mt-1">Radio 3</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

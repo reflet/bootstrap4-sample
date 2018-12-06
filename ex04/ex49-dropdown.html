@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.49 ドロップダウン(dropdown)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="padding-bottom:200px;">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>GUI sample</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>ドロップダウン(dropdown)</h2>
+      <div class="dropdown">
+        <button id="dropdown1" class="btn btn-info dropdown-toggle"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdown1">
+          <h6 class="dropdown-header">Dropdown Header</h6>
+          <button class="dropdown-item">Action 1</button>
+          <button class="dropdown-item" disabled>Action 2 (disabled)</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item">Action 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2>スプリットボタン(split button)</h2>
+      <div class="dropdown btn-group">
+        <button class="btn btn-info">Dropdown</button>
+        <button id="split1" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="split1">
+          <button class="dropdown-item">Action 1</button>
+          <button class="dropdown-item" disabled>Action 2 (disabled)</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item">Action 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

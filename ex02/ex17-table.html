@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.17 表(table)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>表のデザイン</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■テーブル</h2>
+    </div>
+    <div class="col-sm-12">
+      <p>通常の場合 (table class)</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mail</th>
+            <th scope="col">tel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Taro</td>
+            <td>taro@yamada</td>
+            <td>03-9999-9999</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Hanako</td>
+            <td>hanako@flower</td>
+            <td>080-8888-8888</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Sachiko</td>
+            <td>sachiko@happy</td>
+            <td>090-7777-7777</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-12">
+      <P>白黒反転の場合 (table-dark class)</P>
+      <table class="table table-dark">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■枠線を使う (table-bordered class)</h2>
+    </div>
+    <div class="col-sm-12">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■ヘッダーのデザイン設定 (thead-light, thead-dark class)</h2>
+    </div>
+    <div class="col-sm-12">
+      <table class="table">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody class="thead-light">
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■ストライプ・テーブル (table-striped class)</h2>
+    </div>
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■マウスのホバーで選択する (table-hover class)</h2>
+    </div>
+    <div class="col-sm-12">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■小さめのテーブルを表示する (table-sm class)</h2>
+    </div>
+    <div class="col-sm-12">
+      <table class="table table-sm">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>■レスポンシブ (table-responsive class)</h2>
+    </div>
+    <div class="col-6">
+      <table class="table table-responsive">
+        <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">tel</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Taro</td>
+          <td>taro@yamada</td>
+          <td>03-9999-9999</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hanako</td>
+          <td>hanako@flower</td>
+          <td>080-8888-8888</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sachiko</td>
+          <td>sachiko@happy</td>
+          <td>090-7777-7777</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-6">
+      &nbsp;
+    </div>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

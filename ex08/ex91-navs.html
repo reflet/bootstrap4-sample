@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.92 navs</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="nav nav-tabs" id="tab1">
+          <a href="#tab-content-windows" class="nav-link active"
+             data-toggle="tab" role="tab">
+            Windows
+          </a>
+          <a href="#tab-content-mac" class="nav-link"
+             data-toggle="tab" role="tab">
+            macOS
+          </a>
+          <a href="#tab-content-linux" class="nav-link"
+             data-toggle="tab" role="tab">
+            Windows
+          </a>
+        </div>
+        <div class="tab-content">
+          <div id="tab-content-windows" class="tab-pane fade show active" role="tabpanel">
+            <p>this is content for windows.</p>
+            <p>this is content for windows.</p>
+            <p>this is content for windows.</p>
+            <p>this is content for windows.</p>
+          </div>
+          <div id="tab-content-mac" class="tab-pane fade" role="tabpanel">
+            <p>this is content for macOS.</p>
+            <p>this is content for macOS.</p>
+            <p>this is content for macOS.</p>
+            <p>this is content for macOS.</p>
+          </div>
+          <div id="tab-content-linux" class="tab-pane fade" role="tabpanel">
+            <p>this is content for linux.</p>
+            <p>this is content for linux.</p>
+            <p>this is content for linux.</p>
+            <p>this is content for linux.</p>
+          </div>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-primary" id="btn">click</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    (function($){
+      const tabs = $('#tab1');
+
+      $('a', tabs)
+        .addClass('bg-info text-dark')
+        .on('show.bs.tab', (e) => {
+          $(e.target)
+            .removeClass('bg-info tet-dark');
+        })
+        .on('hide.bs.tab', (e) => {
+          $(e.target)
+            .addClass('bg-info text-dark');
+        });
+
+      $('a.active', tabs)
+        .removeClass('bg-info text-dark');
+
+
+      $('#btn').on('click', () => {
+        $("a[href='#tab-content-windows']", tabs).tab('show');
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

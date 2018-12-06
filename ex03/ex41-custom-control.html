@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.41 カスタムフォーム(custom-control)<</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="padding-bottom:200px;">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>GUI sample</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <form method="post" action="#">
+
+        <div class="form-row my-3">
+          <div class="col">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="check" id="cb1" class="custom-control-input">
+              <label for="cb1" class="custom-control-label">checkbox</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row my-3">
+          <div class="col">
+            <div class="custom-control custom-radio">
+              <input type="radio" name="radio" id="rb1" class="custom-control-input">
+              <label for="rb1" class="custom-control-label">radio A</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input type="radio" name="radio" id="rb2" class="custom-control-input">
+              <label for="rb2" class="custom-control-label">radio B</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row my-3">
+          <div class="col">
+            <div class="input-group">
+              <select class="custom-select">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row my-3">
+          <div class="col form-group">
+            <input type="submit" class="btn btn-primary" value="send form">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

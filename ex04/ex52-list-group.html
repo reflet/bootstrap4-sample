@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap Sample No.52 リストグループ(list-group)</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="padding-bottom:200px;">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>GUI sample</h1>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>通常のリスト (ul/ol)</h4>
+      <ul class="list-group">
+        <li class="list-group-item">Windows</li>
+        <li class="list-group-item">macOS</li>
+        <li class="list-group-item">Linux</li>
+        <li class="list-group-item">iOS</li>
+        <li class="list-group-item">android</li>
+      </ul>
+      <br>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>ボタンやリンクのリスト化</h4>
+      <p>button,a,pタグに適用する</p>
+      <p>アクション追加(list-group-item-action)</p>
+      <div class="list-group">
+        <button class="list-group-item list-group-item-action text-left">
+          Windows
+        </button>
+        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+          macOS
+        </a>
+        <p class="list-group-item list-group-item-action">
+          Linux
+        </p>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>アクティブ、非アクティブ</h4>
+      <div class="list-group">
+        <button class="list-group-item list-group-item-action text-left active">
+          Windows
+        </button>
+        <button class="list-group-item list-group-item-action text-left">
+          macOS
+        </button>
+        <button class="list-group-item list-group-item-action text-left">
+          Linux
+        </button>
+        <button class="list-group-item list-group-item-action text-left">
+          iOS
+        </button>
+        <button class="list-group-item list-group-item-action text-left" disabled>
+          android
+        </button>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>背景色</h4>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action list-group-item-primary">
+          list-group-item-primary
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-secondary">
+          list-group-item-secondary
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-info">
+          list-group-item-info
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-warning">
+          list-group-item-warning
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-danger">
+          list-group-item-danger
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-light">
+          list-group-item-light
+        </li>
+        <li class="list-group-item list-group-item-action list-group-item-dark">
+          list-group-item-dark
+        </li>
+      </ul>
+      <br>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>コンテンツリストグループ</h4>
+      <div class="list-group">
+        <a href="javascript:void(0);" class="list-group-item list-group-item-action list-group-item-info">
+          <h5 class="mb-1">First item title.</h5>
+          <p>
+            this is list group item content.
+            this is list group item content.
+            this is list group item content.
+          </p>
+        </a>
+        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+          <h5 class="mb-1">Second item title.</h5>
+          <p>
+            this is list group item content.
+            this is list group item content.
+            this is list group item content.
+          </p>
+        </a>
+        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+          <h5 class="mb-1">Last item title.</h5>
+          <p>
+            this is list group item content.
+            this is list group item content.
+            this is list group item content.
+          </p>
+        </a>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-12">
+      <h4>コンテンツの切り替え表示</h4>
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" role="tablist">
+            <a href="#list-content-windows" class="list-group-item list-group-item-action active" data-toggle="list" role="tab">
+              Windows
+            </a>
+            <a href="#list-content-mac" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+              macOS
+            </a>
+            <a href="#list-content-linux" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+              Linux
+            </a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="list-content-windows" role="tabpanel" aria-labelledby="list-home-list">
+              this is content for windows.<br>
+              this is content for windows.<br>
+              this is content for windows.<br>
+            </div>
+            <div class="tab-pane fade" id="list-content-mac" role="tabpanel" aria-labelledby="list-profile-list">
+              this is content for macOS.<br>
+              this is content for macOS.<br>
+              this is content for macOS.<br>
+            </div>
+            <div class="tab-pane fade" id="list-content-linux" role="tabpanel" aria-labelledby="list-message-list">
+              this is content for linux.<br>
+              this is content for linux.<br>
+              this is content for linux.<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
